@@ -101,12 +101,12 @@ def main():
     print(f"Using device: {device}")
 
     # Dataset
-    transforms_ = transforms.Compose([
+    transforms_pipe = transforms.Compose([
         transforms.Resize((IMG_SIZE, IMG_SIZE)),
         transforms.ToTensor(),
         transforms.Lambda(lambda t: (t * 2) - 1)
     ])
-    dataset = datasets.FashionMNIST(".", download=True, transform=transforms_)
+    dataset = datasets.FashionMNIST(".", download=True, transform=transforms_pipe)
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 
     # Diffusion Schedule
