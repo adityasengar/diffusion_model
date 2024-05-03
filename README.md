@@ -44,6 +44,8 @@ The core idea of diffusion models is to:
 
 ## Usage
 
+Note: The first run will download the Fashion-MNIST dataset, which may take a moment.
+
 To train the diffusion model and generate new images, simply run the `train.py` script.
 
 ```bash
