@@ -98,7 +98,7 @@ def main():
     
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"Using device: {device}")
+    print(f"Device: {device}")
 
     # Dataset
     transforms_pipe = transforms.Compose([
