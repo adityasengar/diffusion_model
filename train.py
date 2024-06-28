@@ -89,6 +89,7 @@ def train(model, data_loader, optimizer, epochs, device, timesteps, alphas_cumpr
 # Main Execution
 # ------------------------------------------------------------------
 def main():
+    """Main function to run the diffusion model training and sampling."""
     # Settings
     IMG_SIZE = 64
     BATCH_SIZE = 128
