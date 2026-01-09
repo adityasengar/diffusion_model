@@ -60,3 +60,4 @@ The script will:
 5.  Save the generated images in a grid to `output/generated_samples.png`.
 
 ```
+# Updated on 2026-01-09
